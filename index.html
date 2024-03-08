@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <section class="header" style="background-color:#302f2f; padding-right: 30px;" >
+        <a href="index.html" class="logo"><img src="logo.png" alt="Logo"></a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Aboutuss.html">About Us</a>
+            <a href="CONTACT.html">Contact</a>
+            <a href="signuplogin.html">SignIn</a>
+        </nav>
+        <div id="menu-btn"><i class="fa fa-bars" style="color: white;"></i></div>
+    </section>
+    <!-- slider section  -->
+    <section class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide slide" style="background: url(https://img.freepik.com/free-photo/looking-up-tall-skyscrapers-urban-city_181624-4641.jpg?size=626&ext=jpg&ga=GA1.1.214113861.1707042216&semt=ais) no-repeat; background-size: cover;">
+                    <div class="content">
+                        <span>ALLOW US TO ASSIST YOU IN THE CREATION OF THE SANCTUARY YOU ENVISION, WHERE THE ESSESNCE OF YOUR ASPIRATIONS FIND REFUGE</span>
+                        <h1>YOUR HOME</h1>
+                       
+                        <a href="map.html" class="btn" style="text-decoration: none;">Explore now</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide slide" style="background: url(https://img.freepik.com/premium-photo/low-angle-view-buildings-against-clear-blue-sky_1048944-29908496.jpg?size=626&ext=jpg&ga=GA1.1.214113861.1707042216&semt=ais) no-repeat; background-size: cover ;">
+                    <div class="content">
+                        <span>ALLOW US TO ASSIST YOU IN THE CREATION OF THE SANCTURY YOU ENVISION, WHERE THE ESSESNVE OF YOUR ASPIRATIONS FINDS REFUGE</span>
+                        <h1>YOUR HOME</h1>
+                        <a href="map.html" class="btn" style="text-decoration: none;">Explore now</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide slide" style="background: url(https://img.freepik.com/free-photo/closeup-shot-white-building-with-windows_181624-2949.jpg?size=626&ext=jpg&ga=GA1.1.214113861.1707042216&semt=ais) no-repeat; background-size: cover;">
+                    <div class="content">
+                        <span style="color: black;">ALLOW US TO ASSIST YOU IN THE CREATION OF THE SANCTURY YOU ENVISION, WHERE THE ESSESNVE OF YOUR ASPIRATIONS FINDS REFUGE</span>
+                        <h1>YOUR HOME</h1>
+                        <a href="map.html" class="btn" style="text-decoration: none;">Explore now</a>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        let menu = document.querySelector('#menu-btn');
+        let headerNavbar = document.querySelector('.header .navbar'); // Updated variable name
+    
+        window.onscroll = () => {
+            headerNavbar.classList.remove('active'); // Updated variable reference
+        };
+    
+        var swiper = new Swiper(".home-slider", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    
+        let menuBtn = document.getElementById('menu-btn');
+        let navbar = document.querySelector('.navbar');
+    
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    
+        window.addEventListener('scroll', () => {
+            navbar.classList.remove('active');
+        });
+    </script>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+            <h3>About Us</h3>
+            <p>Design your dream home by leveraging my knowledge to identify the optimal construction materials for a perfect build.</p>
+          </div >
+          <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p>Email: conmat@ves.ac.in</p>
+            <p>Phone: +91 976 938 4114</p>
+          </div>
+          <div class="footer-info">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024@Conmat.All Rights Reserved.</p>
+        </div>
+      </footer>
+    
+</body>
+</html>
